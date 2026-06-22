@@ -1,0 +1,28 @@
+# --- Supabase ---
+# Crea un proyecto gratis en https://supabase.com
+NEXT_PUBLIC_SUPABASE_URL=https://xxxxx.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_anon_key
+SUPABASE_SERVICE_ROLE_KEY=tu_service_role_key
+
+# --- The Odds API (https://the-odds-api.com) ---
+# Plan gratis: 500 requests/mes. Cubre bet365, William Hill, Betway, Betfair
+# (según región y deporte). Winamax puede no estar disponible en todas las regiones.
+ODDS_API_KEY=tu_odds_api_key
+ODDS_API_REGIONS=uk,eu
+ODDS_API_SPORT=soccer_epl
+
+# --- Betfair (API oficial gratuita, requiere registro de desarrollador) ---
+# https://developer.betfair.com/
+BETFAIR_APP_KEY=tu_betfair_app_key
+BETFAIR_USERNAME=tu_usuario
+BETFAIR_PASSWORD=tu_password
+
+# --- Configuración de arbitraje ---
+# Stake total simulado para calcular el reparto de apuestas (en EUR)
+TOTAL_STAKE=100
+# Margen mínimo de beneficio para considerar una "surebet" (en %)
+MIN_PROFIT_PERCENT=1
+
+# --- Seguridad endpoint cron ---
+# Cabecera secreta que debe enviar Vercel Cron (o tu llamada manual) para ejecutar el fetch
+CRON_SECRET=cambia_esto_por_un_secreto_largo
